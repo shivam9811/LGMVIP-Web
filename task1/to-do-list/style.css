@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: large;
+    background-color: #03045e;
+}
+
+button {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.input {
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #caf0f8;
+    border-radius: 10px;
+}
+
+.input input {
+    width: 65%;
+    height: 70%;
+    font-size: inherit;
+    border: 0.5px solid #888;
+    border-radius: 3px;
+
+}
+
+.input button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #023e8a;
+    color: white;
+    border-radius: 5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.tasks {
+    width: 400px;
+    height: 500px;
+    background-color: #48cae4;
+    margin-top: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.task {
+    display: flex;
+    background-color: #023e8a;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+
+.task.checked {
+    background-color: #84a59d;
+    text-decoration: line-through;
+    color: #000;
+}
+
+.task .content {
+    width: 90%;
+    color: white;
+}
+
+.task.checked .content {
+    color: #000;
+}
+
+.task button {
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: white;
+}
+
+.task.checked button {
+    color: #000;
+}
+
+.task button:hover {
+    color: red;
+}
